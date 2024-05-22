@@ -1,3 +1,5 @@
+# Configura repositórios do docker
+#
 # Add Docker's official GPG key:
 sudo apt-get update
 sudo apt-get install ca-certificates curl
@@ -11,6 +13,21 @@ echo \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
+#
 
-
+# Instala docker
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+#
+
+# Testa instalação do docker
+sudo docker run hello-world > /tmp/docker-hello-world
+
+if grep -Fxq "Hello from Docker!" /tmp/docker-hello-world
+then
+	echo "Docker instalado com sucesso!"
+else
+	echo "Falha ao instalar Docker!"
+fi
+
+rm /tmp/docker-hello-world
+#

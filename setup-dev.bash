@@ -3,4 +3,4 @@
 apt update
 apt full-upgrade
 
-apt install git vim ctags --yes
+apt install git vim ctags nmap --yes

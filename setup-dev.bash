@@ -3,4 +3,4 @@
 apt update
 apt full-upgrade
 
-apt install docker --yes
+apt install git --yes

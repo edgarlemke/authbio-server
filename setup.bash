@@ -3,4 +3,6 @@
 apt update
 apt full-upgrade
 
-apt install docker --yes
+apt install  sudo --yes
+
+./setup-docker.bash

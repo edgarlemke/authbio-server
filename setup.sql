@@ -1,0 +1,3 @@
+CREATE SCHEMA bio;
+CREATE USER 'bio'@'%' IDENTIFIED BY 'bio';
+GRANT ALL PRIVILEGES ON bio.* TO 'bio'@'%';

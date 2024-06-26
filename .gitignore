@@ -1,2 +1,4 @@
 *.sw*
-svelte/node_modules/*
+svelte/node_modules
+spring/.gradle
+spring/build

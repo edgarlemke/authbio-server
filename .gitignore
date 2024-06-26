@@ -1,1 +1,2 @@
 *.sw*
+svelte/node_modules/*

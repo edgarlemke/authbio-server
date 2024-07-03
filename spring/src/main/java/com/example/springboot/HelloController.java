@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 public class HelloController {
 	@GetMapping("/")
 	public String index(Model model) {
-		model.addAttribute("title", "Home Page");
+		model.addAttribute("title", "Login");
 		return "home";
 	}
 }

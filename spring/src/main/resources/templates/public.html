@@ -1,23 +1,10 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:fragment="layout (content)">
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="layout (content)" lang="pt-br">
 	<head>
 		<title th:text="${title}"></title>
+		<link rel="stylesheet" type="text/css" href="css/shared.css" />
 	</head>
 	<body>
-		<header>
-			<h1>Global</h1>
-		</header>
-
-		<nav>
-		</nav>
-
-		<main>
-			<div>Test</div>
-			<div th:replace="${content}"></div>
-		</main>
-
-		<footer>
-			Footer
-		</footer>
+		<main th:replace="${content}"></main>
 	</body>
 </html>

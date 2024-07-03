@@ -30,8 +30,7 @@ dependencies {
         implementation 'org.mariadb.jdbc:mariadb-java-client'
 	// Thymeleaf
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
-	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.0.0'
-
+	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
 }
 
 test {

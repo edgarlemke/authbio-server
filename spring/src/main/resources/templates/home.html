@@ -1,7 +1,16 @@
-<html th:replace="~{public :: layout (~{:: div})}">
+<html th:replace="~{public :: layout (~{:: main})}">
 	<body>
-		<div>
-			Potato
-		</div>
+		<main>
+			<div id="LoginForm-container"></div>
+
+			<script type="text/javascript" src="./svelte/LoginForm/LoginForm.js"></script>
+			<script type="text/javascript">
+				new LoginForm({
+					target: document.getElementById('LoginForm-container')
+				});
+			</script>
+
+			<link rel="stylesheet" type="text/css" href="./svelte/LoginForm/LoginForm.css" />
+		</main>
 	</body>
 </html>

@@ -1,0 +1,52 @@
+:root {
+	--vibrant-orange: #ff6600;
+
+	--main-bg-color: #1a1a1a;
+	--main-content-bg-color: #222222;
+	--main-color: #ffffff;
+	--main-input-bg-color: #333333;
+	--main-input-border-color: var(--vibrant-orange);
+	--main-button-bg-color: var(--vibrant-orange);
+	--main-link-color: var(--vibrant-orange);
+
+	--main-container-box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	--main-container-border-radius: 8px;
+}
+
+body {
+	background-color: var(--main-bg-color);
+	color: var(--main-color);
+}
+
+input, button {
+	min-width: 250px;
+	min-height: 40px;
+}
+
+input {
+	background-color: var(--main-input-bg-color);
+	color: var(--main-color);
+	border: solid 1px var(--main-input-border-color);
+	padding: 8px;
+}
+
+button {
+	background-color: var(--main-button-bg-color);
+	color: var(--main-color);
+	border: none;
+	padding: 10px 20px;
+	font-weight: bold;
+}
+
+a {
+	color: var(--main-link-color);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+form {
+	margin: 0;
+}
